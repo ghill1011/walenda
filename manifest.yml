@@ -1,0 +1,6 @@
+---
+applications:
+- name: walenda
+  memory: 1G
+  host: walenda 
+  path: .
