@@ -1,7 +1,7 @@
 pipeline {
   agent any
   tools {
-    maven = tool 'Apache Maven'
+    maven = 'Apache Maven'
   }
   stages {
     stage("Preparation") {
