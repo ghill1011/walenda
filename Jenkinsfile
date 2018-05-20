@@ -1,24 +1,14 @@
 pipeline {
   agent any
-  tools {
-    maven = 'Apache Maven'
-  }
   stages {
-    stage("Preparation") {
+    stage("Fetch Repository") {
       steps {
         git 'https://github.com/ghill1011/walenda.git'
       }
     }
     stage('Build') {
       steps {
-        //step {
-        // Run the maven build
-        if (isUnix()) {
-          sh "'${maven}/bin/mvn' clean package"
-        } else {
-          bat(/"${maven}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
-        }
-        //}
+          sh "'mvn' clean package"
       }
     }
     stage("Deploy") {
