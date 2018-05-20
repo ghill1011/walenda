@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  tools {
+    maven 'Apache Maven'
+  }
   stages {
     stage("Fetch Repository") {
       steps {
