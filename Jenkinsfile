@@ -11,14 +11,14 @@ pipeline {
     }
     stage('Build') {
       steps {
-        step {
+        //step {
         // Run the maven build
         if (isUnix()) {
           sh "'${maven}/bin/mvn' clean package"
         } else {
           bat(/"${maven}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
         }
-        }
+        //}
       }
     }
     stage("Deploy") {
