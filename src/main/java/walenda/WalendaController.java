@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @RestController
-public class WallendaController {
+public class WalendaController {
 
   @RequestMapping("/")
   public String index() {
