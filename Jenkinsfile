@@ -3,7 +3,7 @@ pipeline {
   tools {
     maven = tool 'Apache Maven'
   }
-  stages {  
+  stages {
     stage("Preparation") {
       steps {
         git 'https://github.com/ghill1011/walenda.git'
@@ -11,11 +11,13 @@ pipeline {
     }
     stage('Build') {
       steps {
+        step {
         // Run the maven build
         if (isUnix()) {
           sh "'${maven}/bin/mvn' clean package"
         } else {
           bat(/"${maven}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
+        }
         }
       }
     }
