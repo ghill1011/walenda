@@ -5,6 +5,8 @@ import java.util.List;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
+import com.ghill1011.walenda.redislabs.PoolManager;
+
 public class OrganizationDAO {
   public static final String key = "organizations";
 

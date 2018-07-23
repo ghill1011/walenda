@@ -5,6 +5,8 @@ import java.util.List;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
+import com.ghill1011.walenda.PoolManager;
+
 public class OrganizationList {
   /*private String organizations;
 
@@ -44,7 +46,7 @@ public class OrganizationList {
     poolManager.close();
   }
   */
-  
+
   public void add (String organization) {
     // get a connection to persistence
     PoolManager poolManager = new PoolManager();
