@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.ghill1011.walenda.PoolManager;
+import com.ghill1011.walenda.redislabs.PoolManager;
 
 @RestController
 public class MemberController {
