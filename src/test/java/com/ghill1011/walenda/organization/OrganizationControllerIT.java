@@ -31,11 +31,12 @@ public class OrganizationControllerIT {
     public void setUp() throws Exception {
         this.base = new URL("http://localhost:" + port + "/");
     }
-
+/*
     @Test
     public void getHello() throws Exception {
         ResponseEntity<String> response = template.getForEntity(base.toString(),
                 String.class);
         assertThat(response.getBody(), equalTo("Greetings from Gregg's first Spring Boot app running in PCF!\n"));
     }
+*/
 }
