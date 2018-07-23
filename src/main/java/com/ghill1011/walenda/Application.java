@@ -1,4 +1,4 @@
-package walenda;
+package com.ghill1011.walenda;
 
 import java.util.Arrays;
 
@@ -20,7 +20,8 @@ public class Application {
   @Bean
   public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
     return args -> {
-      /*
+
+      // let's inspect the beans provided by Spring Boot
       System.out.println("Let's inspect the beans provided by Spring Boot.");
       System.out.println("\tHere they are:");
 
@@ -29,7 +30,7 @@ public class Application {
       for (String beanName : beanNames) {
         System.out.println(beanName);
       }
-      */
+
     };
   }
 

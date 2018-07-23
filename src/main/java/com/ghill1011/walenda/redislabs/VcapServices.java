@@ -1,4 +1,4 @@
-package walenda;
+package com.ghill1011.walenda.redislabs;
 
 import java.util.Arrays;
 import com.google.gson.annotations.SerializedName;

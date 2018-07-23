@@ -1,4 +1,4 @@
-package walenda;
+package com.ghill1011.walenda.redislabs;
 
 public class Credentials {
   private String hostname;

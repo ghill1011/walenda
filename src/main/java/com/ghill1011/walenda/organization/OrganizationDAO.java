@@ -1,4 +1,4 @@
-package walenda;
+package com.ghill1011.walenda.organization;
 
 import java.util.List;
 
@@ -36,6 +36,7 @@ public class OrganizationDAO {
     Jedis jedis = poolManager.getJedis();
 
     // remove the members of the organization and the organization
+    // this feels a little bit like cheating but since I konw the construct of the repository this is just simpler
     jedis.del(organization+".members");
     jedis.lrem(key, 0, organization);
 
