@@ -12,7 +12,7 @@ public class PoolManager {
   private JedisPool pool = null;
   private Jedis jedis = null;
 
-  PoolManager() {
+  public PoolManager() {
       String vcap_services = System.getenv("VCAP_SERVICES");
       if (vcap_services == null || vcap_services.length() <= 0) return; // log it
       Gson gson = new GsonBuilder().setPrettyPrinting().create();
