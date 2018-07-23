@@ -14,7 +14,7 @@ public class MemberController {
 
   //get member homee
   @RequestMapping(value = "/", method = RequestMethod.GET)
-  public List<String> getHome() {
+  public String getHome() {
       return "Greetings from Gregg's first Spring Boot app running in PCF!\n";
   }
 

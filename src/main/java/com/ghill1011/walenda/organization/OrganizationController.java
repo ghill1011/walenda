@@ -12,7 +12,7 @@ public class OrganizationController {
 
   //get organization home
   @RequestMapping(value = "/", method = RequestMethod.GET)
-  public List<String> getHome() {
+  public String getHome() {
       return "Greetings from Gregg's first Spring Boot app running in PCF!\n";
   }
 
