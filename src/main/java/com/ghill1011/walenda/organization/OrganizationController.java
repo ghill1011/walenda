@@ -11,10 +11,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class OrganizationController {
 
   //get organization home
+  /*
   @RequestMapping(value = "/", method = RequestMethod.GET)
   public String getHome() {
       return "Greetings from Gregg's first Spring Boot app running in PCF!\n";
   }
+  */
 
   //get organizations
   @RequestMapping(value = "/organizations", method = RequestMethod.GET)
