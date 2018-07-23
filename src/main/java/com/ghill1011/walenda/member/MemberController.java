@@ -12,6 +12,12 @@ import com.ghill1011.walenda.redislabs.PoolManager;
 @RestController
 public class MemberController {
 
+  //get member homee
+  @RequestMapping(value = "/", method = RequestMethod.GET)
+  public List<String> getHome() {
+      return "Greetings from Gregg's first Spring Boot app running in PCF!\n";
+  }
+
   //get all members of the organization
   @RequestMapping(value = "/{organization}/members", method = RequestMethod.GET)
   public List<String> getMembers(@PathVariable String organization) {
