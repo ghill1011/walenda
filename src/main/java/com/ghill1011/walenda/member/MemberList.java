@@ -1,9 +1,11 @@
-package walenda;
+package com.ghill1011.walenda.member;
 
 import java.util.List;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
+
+import com.ghill1011.walenda.redislabs.PoolManager;
 
 public class MemberList {
   private String memberlist;
