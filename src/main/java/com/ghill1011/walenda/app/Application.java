@@ -1,4 +1,4 @@
-package com.ghill1011.walenda;
+package com.ghill1011.walenda.app;
 
 import java.util.Arrays;
 
